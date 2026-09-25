@@ -1,19 +1,20 @@
-/** @type {import('next').NextIntegration} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized: true,
     remotePatterns: [
       {
-        protocol: 'http',
-        hostname: 'localhost',
+        protocol: 'https',
+        hostname: '**',
       },
       {
         protocol: 'http',
-        hostname: '127.0.0.1',
+        hostname: '**',
       },
     ],
   },
 };
 
 module.exports = nextConfig;
+
